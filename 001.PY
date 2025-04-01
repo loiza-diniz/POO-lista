@@ -17,3 +17,14 @@ class circle:
 
         distancia = math.sqrt((x_ponto - x_centro) ** 2 + (y_ponto - y_centro) ** 2)
         return distancia <= self.radius
+    
+    def __str__(self):
+        return "P={self.perimetro()} , \nA={self.area()}"
+    
+    #teste
+    c1 = circle((2, 2), 3)
+    print(c1)
+    print(c1.test_pertencente((0, 0))) #true
+    print(c1.test_pertencente((0, -1))) #false
+
+    
