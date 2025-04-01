@@ -7,4 +7,6 @@ class domino:
 
     def mostrar_pontos(self):
         print("lado A: {self.Lado_a} lado B: {self.Lado_b}")
-        
+
+    def valor(self):
+        return self.Lado_a + self.Lado_b
