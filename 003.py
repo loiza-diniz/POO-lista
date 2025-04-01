@@ -16,3 +16,12 @@ class Funcionario:
     def tempo_de_casa(self):
         ano_atual = datetime.datetime.now().year
         return ano_atual - self.admissao[2]
+    
+    def aumento_de_salario(self):
+        tempo = self.tempo_de_casa()
+        if tempo < 5:
+            self.salario *= 1.02  
+        elif tempo < 10:
+            self.salario *= 1.05  
+        else:
+            self.salario *= 1.10 
