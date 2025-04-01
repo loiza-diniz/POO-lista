@@ -12,3 +12,7 @@ class Funcionario:
     def idade(self):
         ano_atual = datetime.datetime.now().year
         return ano_atual - self.nascimento[2]
+    
+    def tempo_de_casa(self):
+        ano_atual = datetime.datetime.now().year
+        return ano_atual - self.admissao[2]
