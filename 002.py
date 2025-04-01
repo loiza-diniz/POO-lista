@@ -10,3 +10,6 @@ class domino:
 
     def valor(self):
         return self.Lado_a + self.Lado_b
+    
+    def __str__(self):
+        return "dominó ({self.lado_a}, {self.lado_b})"
