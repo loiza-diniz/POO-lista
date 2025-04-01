@@ -1,6 +1,10 @@
 import math
 
 class domino:
-    def __init__(self, lado_a = 0, lado_b = 0):
-        self.lado_a = lado_a
-        self.lado_b = lado_b
+    def __init__(self, Lado_a = 0, Lado_b = 0):
+        self.Lado_a = Lado_a
+        self.Lado_b = Lado_b
+
+    def mostrar_pontos(self):
+        print("lado A: {self.Lado_a} lado B: {self.Lado_b}")
+        
