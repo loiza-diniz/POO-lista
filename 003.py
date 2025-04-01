@@ -25,3 +25,12 @@ class Funcionario:
             self.salario *= 1.05  
         else:
             self.salario *= 1.10 
+
+    
+    def mostrar_funcionario(self):
+        print(f"Número pessoal: {self.id_num}")
+        print(f"Sobrenome: {self.sobrenome}")
+        print(f"Nome: {self.nome}")
+        print(f"Idade: {self.idade()}")
+        print(f"Tempo de casa: {self.tempo_de_casa()}")
+        print(f"Salário em€: {self.salario:.2f}")
