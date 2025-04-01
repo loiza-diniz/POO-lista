@@ -34,3 +34,8 @@ class Funcionario:
         print(f"Idade: {self.idade()}")
         print(f"Tempo de casa: {self.tempo_de_casa()}")
         print(f"Salário em€: {self.salario:.2f}")
+
+# Teste
+agente = Funcionario('007', 'Bond', 'James', (11, 11, 1970), (7, 4, 1995), 7500)
+agente.aumento_de_salario()
+agente.mostrar_funcionario()
